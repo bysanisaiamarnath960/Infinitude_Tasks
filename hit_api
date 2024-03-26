@@ -1,0 +1,5 @@
+import requests
+url="https://reqres.in/api/users"
+dict={"name":"morpheus","job":"leader"}
+res=requests.post(url,data=dict)
+print(res.json())
